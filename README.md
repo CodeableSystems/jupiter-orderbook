@@ -30,7 +30,8 @@ export default function Orderbook() {
 
   const TOKEN_DECIMALS = 1e9
   const STABLE_DECIMALS = 1e6
-  const { bids, asks, priceUSDC, tokensfor1USDC } = useJupiterOrderbook(TOKEN, STABLE, AMOUNT, TOKEN_DECIMALS, STABLE_DECIMALS)
+  const { bids, asks, priceUSDC, tokensfor1USDC }
+     = useJupiterOrderbook(TOKEN, STABLE, AMOUNT, TOKEN_DECIMALS, STABLE_DECIMALS)
 
   let totalBids = 0
   let totalAsks = 0
@@ -50,7 +51,8 @@ return (
         <div className="flex gap-2 justify-between">
             <div>
             Orderbook from{" "}
-            <a className={linkStyle} target="_blank" href="https://jup.ag/swap/USDC-SCOIN_5qKDWkBejLtRh1UGFV7e58QEkdn2fRyH5ehVXqUYujNW">
+            <a className={linkStyle} target="_blank" 
+                href="https://jup.ag/swap/USDC-SCOIN_5qKDWkBejLtRh1UGFV7e58QEkdn2fRyH5ehVXqUYujNW">
                 jup.ag
             </a>{" "}
             (limit orders)
