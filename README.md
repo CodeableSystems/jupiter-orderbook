@@ -4,13 +4,17 @@ Do market making with Jupiter Limit orders by setting buy and sell orders and vi
 
 This project provides a React hook to get order book data as well as a UI example and code to set limit orders.
 
+## Buy / Sell scripts
+
+In the `examples` folders you'll find scripts for setting limit buy and sell orders for SCOIN/USDC. Adapt to the coins you want to display.
+
 ## Example
 [![Order Book example](examples/SCOIN_USDC_Order_Book.png)](https://sdrive.app/scoin)
 
 ## Live view 
 [SCOIN Order Book](https://sdrive.app/scoin)
 
-## Example usage
+## Example implementation
 
 In the head of a React component
 ```
@@ -31,9 +35,13 @@ export default function Orderbook() {
   let totalBids = 0
   let totalAsks = 0
   let spread = Math.abs(asks[0]?.price - bids[0]?.price).toFixed(6)
+```
 
-  return (
-    <div className="px-2 shadow my-2">
+Then format the order book however you want. Here's an example formatting for USDC/SCOIN used at SDrive.app
+
+```
+return (
+<div className="px-2 shadow my-2">
     <h1 className="p-1">Orderbook SCOIN/USDC</h1>
     <div
         className="w-fit dark:bg-[#000000] flex flex-col font-bold text-sm dark:text-slate-100 my-2 rounded"
@@ -93,7 +101,6 @@ export default function Orderbook() {
         </div>
         </div>:null}
     </div>
-    </div>
-  )
-}
+</div>
+)
 ```
