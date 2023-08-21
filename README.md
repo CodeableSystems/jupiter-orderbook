@@ -76,7 +76,8 @@ return (
                 <div className="w-3/12 h-4">{Math.floor(totalBids)}</div>
                 <div className="w-3/12 h-4">{Math.floor(bid.size)}</div>
                 <div className="w-1/12 h-4"></div>
-                <div className="absolute bg-emerald-500/50 h-full z-0 top-0" style={{ width: `${bid.percentage}%` }}></div>
+                <div className="absolute bg-emerald-500/50 h-full z-0 top-0" 
+                    style={{ width: `${bid.percentage}%` }}></div>
                 </div>
             )
             })}
@@ -96,7 +97,8 @@ return (
                 <div className="w-3/12 z-10 h-4">{Math.floor(totalAsks)}</div>
                 <div className="w-3/12 z-10 h-4">{Math.floor(bid.size)}</div>
                 <div className="w-1/12 h-4"></div>
-                <div className="absolute bg-red-500/50 h-full z-0 top-0" style={{ width: `${bid.percentage}%` }}></div>
+                <div className="absolute bg-red-500/50 h-full z-0 top-0" 
+                    style={{ width: `${bid.percentage}%` }}></div>
                 </div>
             )
             })}
