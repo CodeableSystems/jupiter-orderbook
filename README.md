@@ -8,7 +8,7 @@ This project provides a React hook to get order book data as well as a UI exampl
 [![Order Book example](examples/SCOIN_USDC_Order_Book.png)](https://sdrive.app/scoin)
 
 ## Live view 
-(SCOIN Order Book)[https://sdrive.app/scoin]
+[SCOIN Order Book](https://sdrive.app/scoin)
 
 ## Example usage
 
